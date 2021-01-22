@@ -1,0 +1,20 @@
+" Better safe than sorry
+set nocompatible
+
+" User settings
+set ruler
+set relativenumber
+set history=50
+set showcmd
+set incsearch
+set noerrorbells
+set visualbell
+set textwidth=80
+syntax on
+
+" Tab spacing settings
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
+set expandtab
+set autoindent
