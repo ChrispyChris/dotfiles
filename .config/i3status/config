@@ -8,27 +8,14 @@
 
 general {
         colors = true
-<<<<<<< HEAD
-        color_good = "#FFFFFF"
-        color_degraded = "#000000"
-        color_bad = "#FFFFFF"
-        color_separator = "#FFFFFF"
-=======
         color_good = "#000000"
         color_degraded = "#000000"
         color_bad = "#000000"
         color_separator = "#000000"
->>>>>>> 208c1102a0f1057f2ad54625b9d6bd020da3f060
         output_format = "i3bar"
         interval = 5
 }
 
-<<<<<<< HEAD
-order += "ethernet _first_"
-order += "disk /"
-order += "tztime local"
-
-=======
 order += "wireless _first_"
 order += "ethernet _first_"
 order += "battery all"
@@ -40,21 +27,17 @@ wireless _first_ {
         format_down = "Wlo1: Disconnected"
 }
 
->>>>>>> 208c1102a0f1057f2ad54625b9d6bd020da3f060
 ethernet _first_ {
         format_up = "Eno1: %ip"
         format_down = "Eno1: Disconnected"
 }
 
-<<<<<<< HEAD
-=======
 battery all {
         format = "%percentage %remaining"
         last_full_capacity = true
         integer_battery_capacity = true
 }
 
->>>>>>> 208c1102a0f1057f2ad54625b9d6bd020da3f060
 disk "/" {
         format = "%avail"
 }
