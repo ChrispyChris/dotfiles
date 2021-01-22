@@ -64,8 +64,10 @@ XClock*hourColor:   rgba:9e/b2/bd/ff
 XClock*minuteColor: rgba:9e/b2/bd/ff
 XClock*secondColor: rgba:9e/b2/bd/ff
 
-! Set depth to make transparency work.
-URxvt*depth: 32
+! Depth not needed for transparency, shading is used for fake transparency
+! URxvt*depth: 32
+URxvt*transparent: true
+URxvt*shading: 20
 URxvt*scrollBar:	false
 URxvt*font: xft:xos4 Terminus:pixelsize=10
 URxvt*boldFont: xft:xos4 Terminus:pixelsize=10
