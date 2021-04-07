@@ -1,0 +1,32 @@
+" Better safe than sorry
+set nocompatible
+
+" User settings
+set ruler
+set nu
+set relativenumber
+set history=50
+set showcmd
+set incsearch
+set hidden
+set noerrorbells
+set visualbell
+set nowrap
+set colorcolumn=81
+set noswapfile
+set nobackup
+set scrolloff=8
+
+" Plugin and filetype settings
+filetype indent plugin on
+syntax on
+
+" Tab spacing settings
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
+set expandtab
+set autoindent
+
+" Mappings
+inoremap jj <Esc>
