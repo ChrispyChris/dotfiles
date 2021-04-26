@@ -34,3 +34,4 @@ shopt -q -s extglob
 
 # Set pywal colors for terminals
 (cat ~/.cache/wal/sequences &)
+source ~/.cache/wal/colors-tty.sh
