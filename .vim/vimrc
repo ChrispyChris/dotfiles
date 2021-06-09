@@ -1,6 +1,8 @@
 " Better safe than sorry
 set nocompatible
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
 " User settings
 set ruler
 set nu
@@ -17,9 +19,13 @@ set noswapfile
 set nobackup
 set scrolloff=8
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
 " Plugin and filetype settings
 filetype indent plugin on
 syntax on
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Tab spacing settings
 set tabstop=4
@@ -28,10 +34,22 @@ set softtabstop=4
 set expandtab
 set autoindent
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" Tab spacing settings for HTML/CSS files
+autocmd Filetype html setlocal tabstop=2 shiftwidth=2 softtabstop=2 expandtab autoindent
+autocmd Filetype css setlocal tabstop=2 shiftwidth=2 softtabstop=2 expandtab autoindent
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
 " Mappings
 inoremap jj <Esc>
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Emmett plugin
 let g:user_emmet_install_global = 0
 autocmd FileType html,css EmmetInstall
 let g:user_emmet_leader_key='<C-Z>'
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
