@@ -3,13 +3,19 @@ set nocompatible
 
 " User settings
 set ruler
+set nu
 set relativenumber
 set history=50
 set showcmd
 set incsearch
+set hidden
 set noerrorbells
 set visualbell
-set textwidth=80
+set nowrap
+set colorcolumn=80
+set noswapfile
+set nobackup
+set scrolloff=8
 syntax on
 
 " Tab spacing settings
