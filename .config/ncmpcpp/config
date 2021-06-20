@@ -1,0 +1,30 @@
+### Connection settings ###
+mpd_host = localhost
+mpd_port = 6600
+mpd_music_dir = /mnt/music
+
+### Display settings ###
+playlist_display_mode = columns
+browser_display_mode = columns
+search_engine_display_mode = columns
+playlist_editor_display_mode = columns
+user_interface = "alternative"
+startup_screen = media_library
+display_volume_level = no
+ignore_leading_the = yes
+mouse_support = no
+
+### Progress bar ###
+progressbar_look = =>-
+
+### Color settings ###
+colors_enabled = yes
+header_window_color = white
+volume_color = yellow
+state_line_color = yellow
+main_window_color = yellow
+color1 = white
+color2 = yellow
+progressbar_color = yellow:b
+statusbar_color = white
+statusbar_time_color = yellow:b

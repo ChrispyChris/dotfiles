@@ -67,9 +67,9 @@ XClock*secondColor: rgba:9e/b2/bd/ff
 ! Depth not needed for transparency, shading is used for fake transparency
 ! URxvt*depth: 32
 URxvt*transparent: true
-URxvt*shading: 20
+URxvt*shading: 30
 URxvt*scrollBar:	false
 URxvt*font: xft:xos4 Terminus:pixelsize=10
 URxvt*boldFont: xft:xos4 Terminus:pixelsize=10
-URxvt.perl-ext:
-URxvt.perl-ext-common:
+!URxvt.perl-ext:
+!URxvt.perl-ext-common:
