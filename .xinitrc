@@ -54,6 +54,7 @@ xset -dpms
 
 # Touchpad Settings
 xinput set-prop "SynPS/2 Synaptics TouchPad" "libinput Tapping Enabled" 1
+unclutter &
 
 # Setting up mpd
 mpd &
