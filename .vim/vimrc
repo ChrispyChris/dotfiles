@@ -1,9 +1,17 @@
-" Better safe than sorry
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"                        "
+" Better Safe than Sorry "
+"                        "
+""""""""""""""""""""""""""
+
 set nocompatible
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"               "
+" User Settings "
+"               "
+"""""""""""""""""
 
-" User settings
 set ruler
 set nu
 set relativenumber
@@ -17,17 +25,26 @@ set nowrap
 set colorcolumn=81
 set noswapfile
 set nobackup
+set nowritebackup
 set scrolloff=8
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-" Plugin and filetype settings
-filetype indent plugin on
-syntax on
-
+"              "
+" CoC Settings "
+"              "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-" Tab spacing settings
+set cmdheight=2
+set shortmess+=c
+set updatetime=300
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"                      "
+" Tab Spacing Settings "
+"                      "
+""""""""""""""""""""""""
+
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
@@ -35,21 +52,47 @@ set expandtab
 set autoindent
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"                                         "
+" Tab Spacing Settings for HTML/CSS Files "
+"                                         "
+"""""""""""""""""""""""""""""""""""""""""""
 
-" Tab spacing settings for HTML/CSS files
 autocmd Filetype html setlocal tabstop=2 shiftwidth=2 softtabstop=2 expandtab autoindent
 autocmd Filetype css setlocal tabstop=2 shiftwidth=2 softtabstop=2 expandtab autoindent
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"          "
+" Mappings "
+"          "
+""""""""""""
 
-" Mappings
 inoremap jj <Esc>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"                              "
+" Plugin and Filetype Settings "
+"                              "
+""""""""""""""""""""""""""""""""
+"
+" vim-plug automatically executes filetype plugin indent on and syntax enable
+"
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-" Emmett plugin
-let g:user_emmet_install_global = 0
-autocmd FileType html,css EmmetInstall
+call plug#begin('~/.vim/plugs')
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'mattn/emmet-vim'
+Plug 'preservim/nerdtree'
+Plug 'pangloss/vim-javascript'
+Plug 'leafgarland/typescript-vim'
+Plug 'maxmellon/vim-jsx-pretty'
+call plug#end()
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"               "
+" Emmett Plugin "
+"               "
+"""""""""""""""""
+
 let g:user_emmet_leader_key='<C-Z>'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
