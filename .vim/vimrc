@@ -18,6 +18,9 @@ set nobackup
 set scrolloff=8
 syntax on
 
+" Git settings
+set noro
+
 " Tab spacing settings
 set tabstop=4
 set shiftwidth=4
