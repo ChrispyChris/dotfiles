@@ -8,15 +8,7 @@ sysmodmap=/etc/X11/xinit/.Xmodmap
 # merge in defaults and keymaps
 
 if [ -f $sysresources ]; then
-
-
-
-
-
-
-
     xrdb -merge $sysresources
-
 fi
 
 if [ -f $sysmodmap ]; then
@@ -24,15 +16,7 @@ if [ -f $sysmodmap ]; then
 fi
 
 if [ -f "$userresources" ]; then
-
-
-
-
-
-
-
     xrdb -merge "$userresources"
-
 fi
 
 if [ -f "$usermodmap" ]; then
@@ -58,6 +42,8 @@ unclutter &
 
 # Setting up mpd
 mpd &
+# Swap Caps Lock and Left Control
+setxkbmap -option ctrl:swapcaps
 # Setting up i3-gaps environment
 ~/bin/fehbg &
 exec i3
