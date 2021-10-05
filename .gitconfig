@@ -1,0 +1,9 @@
+[user]
+	name = Chris Wood
+	email = chrispychris3@gmail.com
+[diff]
+	tool = vimdiff
+[difftool]
+	prompt = 0
+[merge]
+	tool = vimdiff
