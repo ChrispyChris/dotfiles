@@ -10,8 +10,9 @@
 # Set up aliases
 #
 ############################################################
-alias ls='ls --color=auto'
-alias dotfile='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias vim="nvim"
+alias ls="ls --color=auto"
+alias dotfile="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
 
 ############################################################
 #
@@ -24,9 +25,11 @@ PS1='[\u@\h \w]\$ '
 
 # Set VIM keybinds for Bash
 set -o vi
+bind -m vi-command 'Control-l: clear-screen'
+bind -m vi-insert 'Control-l: clear-screen'
 
 # Set text editor
-export VISUAL=vim
+export VISUAL=nvim
 export EDITOR="$VISUAL"
 
 # Set extended pattern matching
