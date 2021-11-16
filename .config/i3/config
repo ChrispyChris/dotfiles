@@ -43,23 +43,11 @@ bindsym Mod1+k focus down
 bindsym Mod1+l focus up
 bindsym Mod1+semicolon focus right
 
-# alternatively, you can use the cursor keys:
-bindsym Mod1+Left focus left
-bindsym Mod1+Down focus down
-bindsym Mod1+Up focus up
-bindsym Mod1+Right focus right
-
 # move focused window
 bindsym Mod1+Shift+j move left
 bindsym Mod1+Shift+k move down
 bindsym Mod1+Shift+l move up
 bindsym Mod1+Shift+semicolon move right
-
-# alternatively, you can use the cursor keys:
-bindsym Mod1+Shift+Left move left
-bindsym Mod1+Shift+Down move down
-bindsym Mod1+Shift+Up move up
-bindsym Mod1+Shift+Right move right
 
 # split in horizontal orientation
 bindsym Mod1+h split h
@@ -164,8 +152,8 @@ bar {
 }
 
 # I3-gaps configuration
-gaps inner 15
-gaps outer 15
+gaps inner 10
+gaps outer 10
 
 # Windows border
 for_window [class=".*"] border pixel 2
