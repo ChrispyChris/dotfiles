@@ -42,90 +42,66 @@ font -xos4-terminus-*-*-normal-*-12-*-*-*-*-*-*-*
 # X core fonts rendering does not support right-to-left and this being a bitmap
 # font, it doesn't scale on retina/hidpi displays.
 
-# use these keys for focus, movement, and resize directions when reaching for
+# Use these keys for focus, movement, and resize directions when reaching for
 # the arrows is not convenient
 set $up l
 set $down k
 set $left j
 set $right semicolon
 
-# launching programs
+# Launching programs
 bindsym Mod1+w exec --no-startup-id google-chrome-stable
-# use Mouse+Mod1 to drag floating windows to their wanted position
+
+# Use Mouse+Mod1 to drag floating windows to their wanted position
 floating_modifier Mod1
 
-# start a terminal
+# Start a terminal
 bindsym Mod1+Return exec i3-sensible-terminal
 
-# kill focused window
+# Kill focused window
 bindsym Mod1+Shift+q kill
 
-# start dmenu (with colors from Xresources)
+# Start dmenu (with colors from Xresources)
 bindsym Mod1+d exec --no-startup-id dmenu_run -nb "$fg" -nf "$bg" -sb "$bg" -sf "$fg"
-# There also is the (new) i3-dmenu-desktop which only displays applications
-# shipping a .desktop file. It is a wrapper around dmenu, so you need that
-# installed.
-# bindsym Mod1+d exec --no-startup-id i3-dmenu-desktop
 
-# change focus
+# Change focus
 bindsym Mod1+$left focus left
 bindsym Mod1+$down focus down
 bindsym Mod1+$up focus up
 bindsym Mod1+$right focus right
 
-# alternatively, you can use the cursor keys:
-bindsym Mod1+Left focus left
-bindsym Mod1+Down focus down
-bindsym Mod1+Up focus up
-bindsym Mod1+Right focus right
-
-# move focused window
+# Move focused window
 bindsym Mod1+Shift+$left move left
 bindsym Mod1+Shift+$down move down
 bindsym Mod1+Shift+$up move up
 bindsym Mod1+Shift+$right move right
 
-# alternatively, you can use the cursor keys:
-bindsym Mod1+Shift+Left move left
-bindsym Mod1+Shift+Down move down
-bindsym Mod1+Shift+Up move up
-bindsym Mod1+Shift+Right move right
-
-# split in horizontal orientation
+# Split in horizontal orientation
 bindsym Mod1+h split h
 
-# split in vertical orientation
+# Split in vertical orientation
 bindsym Mod1+v split v
 
-# enter fullscreen mode for the focused container
+# Enter fullscreen mode for the focused container
 bindsym Mod1+Shift+f fullscreen toggle
 
-# change container layout (stacked, tabbed, toggle split)
-bindsym Mod1+s layout stacking
-#bindsym Mod1+w layout tabbed
+# Toggle layout split horizontal/vertical
 bindsym Mod1+e layout toggle split
 
-# toggle tiling / floating
+# Toggle tiling / floating
 bindsym Mod1+Shift+space floating toggle
 
-# change focus between tiling / floating windows
+# Change focus between tiling / floating windows
 bindsym Mod1+space focus mode_toggle
 
-# focus the parent container
+# Focus the parent container
 bindsym Mod1+a focus parent
 
-# focus the child container
+# Focus the child container
 #bindsym Mod1+d focus child
 
-# move the currently focused window to the scratchpad
-bindsym Mod1+Shift+minus move scratchpad
-
-# Show the next scratchpad window or hide the focused scratchpad window.
-# If there are multiple scratchpad windows, this command cycles through them.
-bindsym Mod1+minus scratchpad show
-
-# Define names for default workspaces for which we configure key bindings later on.
-# We use variables to avoid repeating the names in multiple places.
+# Define names for default workspaces for which we configure key bindings later on
+# We use variables to avoid repeating the names in multiple places
 set $ws1 "1"
 set $ws2 "2"
 set $ws3 "3"
@@ -137,8 +113,7 @@ set $ws8 "8"
 set $ws9 "9"
 set $ws10 "10"
 
-
-# switch to workspace
+# Switch to workspace
 bindsym Mod1+1 workspace $ws1
 bindsym Mod1+2 workspace $ws2
 bindsym Mod1+3 workspace $ws3
@@ -149,10 +124,11 @@ bindsym Mod1+7 workspace $ws7
 bindsym Mod1+8 workspace $ws8
 bindsym Mod1+9 workspace $ws9
 bindsym Mod1+0 workspace $ws10
-# switch to previously focused workspace
+
+# Switch to previously focused workspace
 bindsym Mod1+Tab workspace back_and_forth
 
-# move focused container to workspace
+# Move focused container to workspace
 bindsym Mod1+Shift+1 move container to workspace $ws1
 bindsym Mod1+Shift+2 move container to workspace $ws2
 bindsym Mod1+Shift+3 move container to workspace $ws3
@@ -164,15 +140,16 @@ bindsym Mod1+Shift+8 move container to workspace $ws8
 bindsym Mod1+Shift+9 move container to workspace $ws9
 bindsym Mod1+Shift+0 move container to workspace $ws10
 
-# reload the configuration file
+# Reload the configuration file
 bindsym Mod1+Shift+c reload
-# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
+
+# Restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym Mod1+Shift+r restart
+
 # exit i3 (logs you out of your X session)
 bindsym Mod1+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
-# resize window (you can also use the mouse for that)
-
+# Resize window
 bindsym Mod1+Shift+u resize shrink width 10 px or 10 ppt
 bindsym Mod1+Shift+i resize grow height 10 px or 10 ppt
 bindsym Mod1+Shift+o resize shrink height 10 px or 10 ppt
@@ -195,5 +172,24 @@ bar {
 gaps inner 15
 gaps outer 15
 
-#Windows border
+# Windows border
 default_border pixel 2
+
+#################################################
+#                                               #
+#                  Scratchpad                   #
+#                                               #
+#################################################
+
+bindsym Mod1+Shift+minus move scratchpad
+bindsym Mod1+minus scratchpad show
+
+#################################################
+#                                               #
+#                  Set Volume                   #
+#                                               #
+#################################################
+
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 2 +2%
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 2 -2%
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 2 toggle
