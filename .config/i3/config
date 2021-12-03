@@ -58,9 +58,7 @@ bindsym Mod1+v split v
 # enter fullscreen mode for the focused container
 bindsym Mod1+Shift+f fullscreen toggle
 
-# change container layout (stacked, tabbed, toggle split)
-bindsym Mod1+s layout stacking
-bindsym Mod1+w layout tabbed
+# toggle layout split horizontal/vertical
 bindsym Mod1+e layout toggle split
 
 # toggle tiling / floating
@@ -99,6 +97,7 @@ bindsym Mod1+7 workspace $ws7
 bindsym Mod1+8 workspace $ws8
 bindsym Mod1+9 workspace $ws9
 bindsym Mod1+0 workspace $ws10
+
 # Switch to previously focused workspace "alt+tab"
 bindsym Mod1+Tab workspace back_and_forth
 
@@ -116,8 +115,10 @@ bindsym Mod1+Shift+0 move container to workspace $ws10
 
 # reload the configuration file
 bindsym Mod1+Shift+c reload
+
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym Mod1+Shift+r restart
+
 # Exit i3 (logs you out of your X session)
 bindsym Mod1+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
