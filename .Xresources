@@ -67,7 +67,6 @@ XClock*hourColor:   rgba:af/bb/cc/ff
 XClock*minuteColor: rgba:af/bb/cc/ff
 XClock*secondColor: rgba:af/bb/cc/ff
 
-
 !! URxvt Appearance
 URxvt.font: xft:Terminus:style=regular:pixelsize=12
 ! URxvt.font: xft:xos4 Terminus:pixelsize=12
