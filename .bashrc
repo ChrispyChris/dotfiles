@@ -40,4 +40,4 @@ shopt -q -s extglob
 source ~/.cache/wal/colors-tty.sh
 
 # Set up dircolors
-eval `dircolors /home/chris/.dir_colors`
+eval $(dircolors /home/chris/.dir_colors)
