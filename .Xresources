@@ -1,10 +1,8 @@
 ! Colors set from pywal using .cache/wal/colors.Xresources
 #include "/home/chris/.cache/wal/colors.Xresources"
 
-! For real transparency, uncomment URxvt*transparent and URxvt*shading
-! Also install a composite manager
-!URxvt*transparent: true
-!URxvt*shading: 30
+URxvt*transparent: true
+URxvt*shading: 30
 
 URxvt*scrollBar: false
 URxvt*font: xft:xos4 Terminus:pixelsize=10
