@@ -47,5 +47,5 @@ setxkbmap -option ctrl:swapcaps
 setxkbmap -option compose:menu
 
 # Setting up i3-gaps environment
+wal -R 
 exec i3
-wal -R
