@@ -5,6 +5,9 @@
 # it fails to get colors from Xresources.
 set_from_resource $fg i3wm.color7 #f0f0f0
 set_from_resource $bg i3wm.color2 #f0f0f0
+set_from_resource $dmenu-color0 i3wm.color0 #f0f0f0
+set_from_resource $dmenu-color1 i3wm.color1 #f0f0f0
+set_from_resource $dmenu-color15 i3wm.color15 #f0f0f0
 
 # class                 border      backgr.     text        indicator       child_border
 client.focused          $bg         $bg         $fg         $bg             $bg
@@ -28,8 +31,7 @@ client.background       $bg
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-# font pango:xos4 Terminus 10
-font -xos4-terminus-*-*-normal-*-12-*-*-*-*-*-*-*
+font -xos4-terminus-medium-r-normal--12-120-72-72-c-60-iso10646-1
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -62,8 +64,8 @@ bindsym Mod1+Return exec i3-sensible-terminal
 bindsym Mod1+Shift+q kill
 
 # Start dmenu (with colors from Xresources)
-bindsym Mod1+d exec --no-startup-id dmenu_run -nb "$fg" -nf "$bg" -sb "$bg" -sf "$fg"
-
+bindsym Mod1+d exec --no-startup-id dmenu_run -nb "$dmenu-color0" -nf "$dmenu-color15" -sb "$dmenu-color1" -sf "$dmenu-color15" -fn "xos4 terminus-10"
+	
 # Change focus
 bindsym Mod1+$left focus left
 bindsym Mod1+$down focus down
@@ -158,8 +160,7 @@ bindsym Mod1+Shift+p resize grow width 10 px or 10 ppt
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-	#font pango:xos4 Terminus 10
-	font -xos4-terminus-*-*-normal-*-12-*-*-*-*-*-*-*
+    font -xos4-terminus-medium-r-normal--12-120-72-72-c-60-iso10646-1
 	colors {
 			background $bg
 			statusline #FFFFFFFF
