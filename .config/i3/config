@@ -1,5 +1,8 @@
 set_from_resource $fg i3wm.color7 #f0f0f0
 set_from_resource $bg i3wm.color2 #f0f0f0
+set_from_resource $dmenu-color0 i3wm.color0 #f0f0f0
+set_from_resource $dmenu-color1 i3wm.color1 #f0f0f0
+set_from_resource $dmenu-color15 i3wm.color15 #f0f0f0
 
 # class                 border  backgr. text indicator child_border
 client.focused          $bg     $bg     $fg  $bg       $bg
@@ -35,7 +38,7 @@ bindsym Mod1+Return exec i3-sensible-terminal
 bindsym Mod1+Shift+q kill
 
 # start dmenu (with colors from Xresources)
-bindsym Mod1+d exec --no-startup-id dmenu_run -nb "$fg" -nf "$bg" -sb "$bg" -sf "$fg"
+bindsym Mod1+d exec --no-startup-id dmenu_run -nb "$dmenu-color0" -nf "$dmenu-color15" -sb "$dmenu-color1" -sf "dmenu-color15" -fn "xos4 terminus-10"
 
 # change focus
 bindsym Mod1+j focus left
