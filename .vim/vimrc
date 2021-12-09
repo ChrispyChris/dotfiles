@@ -3,14 +3,24 @@ set nocompatible
 
 " User settings
 set ruler
+set number
+set laststatus=2
 set relativenumber
 set history=50
 set showcmd
 set incsearch
+set hidden
 set noerrorbells
 set visualbell
-set textwidth=80
+set nowrap
+set colorcolumn=80
+set noswapfile
+set nobackup
+set scrolloff=8
 syntax on
+
+" Git settings
+set noro
 
 " Tab spacing settings
 set tabstop=4
