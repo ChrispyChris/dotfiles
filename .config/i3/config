@@ -179,6 +179,6 @@ bindsym Mod1+minus scratchpad show
 #                                               #
 #################################################
 
-bindsym XF86AudioRaiseVolume exec amixer -q set Master 2dB+ unmute
-bindsym XF86AudioLowerVolume exec amixer -q set Master 2dB- unmute
+bindsym XF86AudioRaiseVolume exec amixer -q sset Master 2%+ unmute
+bindsym XF86AudioLowerVolume exec amixer -q sset Master 2%- unmute
 bindsym XF86AudioMute exec amixer -q set Master toggle && amixer -q set Speaker unmute
