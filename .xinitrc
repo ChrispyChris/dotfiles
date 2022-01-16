@@ -44,6 +44,5 @@ mpd &
 # Swap Caps Lock and Left Control
 setxkbmap -option ctrl:swapcaps
 # Setting up i3-gaps environment
-~/bin/fehbg &
+wal -i "/home/chris/Wallpapers/Sky.png"
 exec i3
-wal -R
