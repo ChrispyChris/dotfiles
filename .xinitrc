@@ -43,5 +43,5 @@ mpd &
 #setxkbmap -option ctrl:swapcaps
 
 # Start i3-gaps
-wal -R
+wal -i "/home/chris/Wallpapers/Sky.png"
 exec i3
