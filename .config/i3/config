@@ -54,10 +54,10 @@ bindsym Mod1+Shift+l move up
 bindsym Mod1+Shift+semicolon move right
 
 # Resize window
-bindsym j resize grow width 10 px or 10 ppt
-bindsym k resize grow height 10 px or 10 ppt
-bindsym l resize shrink height 10 px or 10 ppt
-bindsym semicolon resize shrink width 10 px or 10 ppt
+bindsym Mod1+Shift+u resize shrink width 10 px or 10 ppt
+bindsym Mod1+Shift+i resize grow height 10 px or 10 ppt
+bindsym Mod1+Shift+o resize shrink height 10 px or 10 ppt
+bindsym Mod1+Shift+p resize grow width 10 px or 10 ppt
 
 # Split in horizontal orientation
 bindsym Mod1+h split h
