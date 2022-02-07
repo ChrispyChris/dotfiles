@@ -78,6 +78,12 @@ bindsym Mod1+Shift+$down move down
 bindsym Mod1+Shift+$up move up
 bindsym Mod1+Shift+$right move right
 
+# Resize window
+bindsym Mod1+Shift+u resize shrink width 10 px or 10 ppt
+bindsym Mod1+Shift+i resize grow height 10 px or 10 ppt
+bindsym Mod1+Shift+o resize shrink height 10 px or 10 ppt
+bindsym Mod1+Shift+p resize grow width 10 px or 10 ppt
+
 # Split in horizontal orientation
 bindsym Mod1+h split h
 
@@ -97,7 +103,7 @@ bindsym Mod1+Shift+space floating toggle
 bindsym Mod1+space focus mode_toggle
 
 # Focus the parent container
-bindsym Mod1+a focus parent
+#bindsym Mod1+a focus parent
 
 # Focus the child container
 #bindsym Mod1+d focus child
@@ -150,12 +156,6 @@ bindsym Mod1+Shift+r restart
 
 # exit i3 (logs you out of your X session)
 bindsym Mod1+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
-
-# Resize window
-bindsym Mod1+Shift+u resize shrink width 10 px or 10 ppt
-bindsym Mod1+Shift+i resize grow height 10 px or 10 ppt
-bindsym Mod1+Shift+o resize shrink height 10 px or 10 ppt
-bindsym Mod1+Shift+p resize grow width 10 px or 10 ppt
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)

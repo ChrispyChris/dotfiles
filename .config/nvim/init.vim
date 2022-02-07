@@ -69,8 +69,8 @@ inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm()
                               \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
 
 " Add NeoVim's native statusline support
-"set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
-"set statusline+=%F
+set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
+set statusline+=%F
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "                      "
@@ -114,6 +114,7 @@ inoremap jj <Esc>
 call plug#begin('~/.vim/plugs')
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'preservim/nerdtree'
+Plug 'mattn/emmet-vim'
 Plug 'pangloss/vim-javascript'
 Plug 'leafgarland/typescript-vim'
 Plug 'maxmellon/vim-jsx-pretty'
@@ -124,7 +125,8 @@ call plug#end()
 " Emmett Plugin "
 "               "
 """""""""""""""""
-"
-"let g:user_emmet_leader_key='<C-Z>'
-"
+
+let g:user_emmet_leader_key='<C-Z>'
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
