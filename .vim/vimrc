@@ -12,8 +12,12 @@ set nocompatible
 "               "
 """""""""""""""""
 
-set ruler
-set nu
+" Leader key setup
+nnoremap <Space> <Nop>
+let mapleader=" "
+nnoremap <leader>n :NERDTree<CR>
+
+set number
 set relativenumber
 set history=50
 set showcmd
@@ -29,10 +33,18 @@ set nowritebackup
 set scrolloff=8
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"               "
+"  Status Bar   "
+"               "
+"""""""""""""""""
+
+set laststatus=2
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "              "
 " CoC Settings "
 "              "
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""
 
 set cmdheight=2
 set shortmess+=c
