@@ -16,24 +16,47 @@ alias dotfile="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
 
 ############################################################
 #
-# Set up Bash
+# Bash Variables
 #
 ############################################################
 
 # Set Bash prompt
 PS1='[\u@\h \w]\$ '
 
-# Set VIM keybinds for Bash
-set -o vi
-bind -m vi-command 'Control-l: clear-screen'
-bind -m vi-insert 'Control-l: clear-screen'
+# Ignore duplicate lines and lines starting with space in the history
+HISTCONTROL=ignoreboth
+HISTSIZE=1000
+HISTFILESIZE=2000
 
 # Set text editor
 export VISUAL=nvim
 export EDITOR="$VISUAL"
 
+############################################################
+#
+# Set Bash shell options
+#
+############################################################
+
 # Set extended pattern matching
 shopt -q -s extglob
+
+# Set history to append to file for multiple Bash instances
+shopt -s histappend
+
+############################################################
+#
+# Set up Bash
+#
+############################################################
+
+
+
+# Set VIM keybinds for Bash
+set -o vi
+bind -m vi-command 'Control-l: clear-screen'
+bind -m vi-insert 'Control-l: clear-screen'
+
 
 # Set pywal colors for terminals
 (cat ~/.cache/wal/sequences &)

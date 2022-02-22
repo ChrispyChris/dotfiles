@@ -111,8 +111,9 @@ inoremap jj <Esc>
 
 call plug#begin('~/.vim/plugs')
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'mattn/emmet-vim'
 Plug 'preservim/nerdtree'
+Plug 'morhetz/gruvbox'
+Plug 'mattn/emmet-vim'
 Plug 'pangloss/vim-javascript'
 Plug 'leafgarland/typescript-vim'
 Plug 'maxmellon/vim-jsx-pretty'
@@ -124,6 +125,17 @@ call plug#end()
 "               "
 """""""""""""""""
 
-let g:user_emmet_leader_key='<C-Z>'
+let g:user_emmet_leader_key='<Leader>'
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"               "
+" Color Scheme  "
+"               "
+"""""""""""""""""
+
+let g:gruvbox_italic=1
+autocmd vimenter * ++nested colorscheme gruvbox
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

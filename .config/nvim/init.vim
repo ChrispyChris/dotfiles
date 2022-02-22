@@ -17,20 +17,20 @@ nnoremap <Space> <Nop>
 let mapleader=" "
 nnoremap <leader>n :NERDTree<CR>
 
+set colorcolumn=81
+set hidden
+set history=50
+set incsearch
+set nobackup
+set noerrorbells
+set noswapfile
+set nowrap
+set nowritebackup
 set number
 set relativenumber
-set history=50
-set showcmd
-set incsearch
-set hidden
-set noerrorbells
-set visualbell
-set nowrap
-set colorcolumn=81
-set noswapfile
-set nobackup
-set nowritebackup
 set scrolloff=8
+set showcmd
+set visualbell
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "               "
@@ -107,17 +107,19 @@ inoremap jj <Esc>
 "                              "
 """"""""""""""""""""""""""""""""
 "
-" vim-plug automatically executes filetype plugin indent on and syntax enable
+" Vim-plug automatically executes filetype plugin indent on and syntax enable
+" If removing vim-plug, enable these options in configuration
 "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 call plug#begin('~/.vim/plugs')
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'preservim/nerdtree'
-Plug 'mattn/emmet-vim'
-Plug 'pangloss/vim-javascript'
-Plug 'leafgarland/typescript-vim'
-Plug 'maxmellon/vim-jsx-pretty'
+Plug 'morhetz/gruvbox'
+Plug 'mattn/emmet-vim', { 'for': ['css', 'html'] }
+Plug 'pangloss/vim-javascript', { 'for': ['javascript'] }
+Plug 'leafgarland/typescript-vim', { 'for': ['typescript'] }
+Plug 'maxmellon/vim-jsx-pretty', { 'for': ['javascript', 'typescript'] }
 call plug#end()
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -126,6 +128,24 @@ call plug#end()
 "               "
 """""""""""""""""
 
-let g:user_emmet_leader_key='<C-Z>'
+let g:user_emmet_leader_key=','
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"               "
+" Color Scheme  "
+"               "
+"""""""""""""""""
+
+let g:gruvbox_italic=1
+autocmd vimenter * ++nested colorscheme gruvbox
+
+if (has("nvim"))
+  let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+endif
+if (has("termguicolors"))
+  set termguicolors
+endif
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
