@@ -32,6 +32,9 @@ HISTFILESIZE=2000
 export VISUAL=nvim
 export EDITOR="$VISUAL"
 
+# Set xcolor variable for saving picked color
+export XCOLOR_FOREGROUND=""
+
 ############################################################
 #
 # Set Bash shell options
