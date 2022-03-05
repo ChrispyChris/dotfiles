@@ -38,8 +38,3 @@ vim.opt.writebackup = false
 -- Gruvbox Theme
 vim.o.background = "dark"
 vim.cmd([[colorscheme gruvbox]])
-
-if vim.env.TMUX then
-  local dirname = vim.fn.fnamemodify(cwd, ":t")
-  set.statusline:append(f("[%s] ", dirname))
-end

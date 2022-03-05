@@ -67,3 +67,5 @@ source ~/.cache/wal/colors-tty.sh
 
 # Set up dircolors
 eval $(dircolors /home/chris/.dir_colors)
+
+alias luamake=/home/chris/Downloads/git_downloads/lua-language-server/3rd/luamake/luamake
