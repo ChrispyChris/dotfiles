@@ -6,7 +6,7 @@ vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
 -- Set emmet leader key
-vim.b.user_emmet_leader_key = ","
+vim.g.user_emmet_leader_key = ","
 
 -- Configure keymaps
 vim.api.nvim_set_keymap("n", "<Leader>n", ":NERDTree<CR>", opts)
