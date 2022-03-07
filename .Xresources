@@ -1,12 +1,15 @@
-! To only apply colors to your terminal, prefix
-! the color assignment statement with its name. Example:
-!
-!URxvt*background:            S_base03
+! Colors.
+*foreground:        #afbbcc
+*background:        #080F37
+*.foreground:       #afbbcc
+*.background:       #080F37
+*bordercolor:       #[100]#080F37
+URxvt*foreground:   #afbbcc
+URxvt*background:   [100]#080F37
+URxvt*cursorColor:  #afbbcc
+URxvt*borderColor:  [100]#080F37
 
-! Colors generated from pywal
-#include "/home/chris/.cache/wal/colors.Xresources"
-
-!! URxvt Appearance
+!! URxvt
 URxvt.font: xft:Terminus:style=regular:pixelsize=14
 URxvt.boldFont: xft:Terminus:style=bold:pixelsize=14
 URxvt.letterSpace: 0
@@ -22,7 +25,9 @@ URxvt.urgentOnBell: true
 URxvt.transparent: false
 URxvt.shading: 30
 URxvt.iso14755: false
+URxvt.keysym.Shift-Up: command:\033]720;1\007
+URxvt.keysym.Shift-Down: command:\033]721;1\007
 
 !! Perl Enable/Disable
-! URxvt.perl-ext:
-! URxvt.perl-ext-common:
+!! URxvt.perl-ext:
+!! URxvt.perl-ext-common:

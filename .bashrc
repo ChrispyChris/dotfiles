@@ -53,19 +53,10 @@ shopt -s histappend
 #
 ############################################################
 
-
-
 # Set VIM keybinds for Bash
 set -o vi
 bind -m vi-command 'Control-l: clear-screen'
 bind -m vi-insert 'Control-l: clear-screen'
 
-
-# Set pywal colors for terminals
-(cat ~/.cache/wal/sequences &)
-source ~/.cache/wal/colors-tty.sh
-
 # Set up dircolors
 eval $(dircolors /home/chris/.dir_colors)
-
-alias luamake=/home/chris/Downloads/git_downloads/lua-language-server/3rd/luamake/luamake

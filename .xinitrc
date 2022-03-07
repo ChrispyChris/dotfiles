@@ -39,9 +39,6 @@ xset -dpms
 # Start the Music Player Daemon
 mpd &
 
-# Swap Caps Lock and Left Control
-#setxkbmap -option ctrl:swapcaps
-
 # Start i3-gaps
-wal -i "/home/chris/Wallpapers/Sky.png"
+~/.fehbg &
 exec i3
