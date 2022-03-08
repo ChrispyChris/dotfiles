@@ -34,7 +34,3 @@ vim.opt.undofile = true
 vim.opt.updatetime = 300
 vim.opt.wrap = false
 vim.opt.writebackup = false
-
--- Gruvbox Theme
-vim.o.background = "dark"
-vim.cmd([[colorscheme gruvbox]])

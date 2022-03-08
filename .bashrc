@@ -21,7 +21,7 @@ alias dotfile="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
 ############################################################
 
 # Set Bash prompt
-PS1='\033[0m\033[38;5;87;48;5;207m[\u@\h \w]\$\033[0m '
+PS1='\[\033[0m\033[38;5;17;48;5;213m\][\u@\h \w]\$\[\033[0m\] '
 
 # Ignore duplicate lines and lines starting with space in the history
 HISTCONTROL=ignoreboth
