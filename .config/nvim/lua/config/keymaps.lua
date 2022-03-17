@@ -9,5 +9,5 @@ vim.g.maplocalleader = " "
 vim.g.user_emmet_leader_key = ","
 
 -- Configure keymaps
-vim.api.nvim_set_keymap("n", "<Leader>n", ":NERDTree<CR>", opts)
+vim.api.nvim_set_keymap("n", "<Leader>n", ":NERDTreeToggle<CR>", opts)
 vim.api.nvim_set_keymap("i", "jj", "<Esc>", opts)
