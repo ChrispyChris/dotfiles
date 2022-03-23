@@ -19,7 +19,7 @@ alias luamake=/home/chris/Git-Downloads/lua-language-server/3rd/luamake/luamake
 
 ############################################################
 #
-# Bash Variables.
+# Bash variables.
 #
 ############################################################
 
