@@ -3,7 +3,7 @@
 *background:        #080F37
 *.foreground:       #afbbcc
 *.background:       #080F37
-*bordercolor:       #[100]#080F37
+*bordercolor:       [100]#080F37
 URxvt*foreground:   #afbbcc
 URxvt*background:   [100]#080F37
 URxvt*cursorColor:  #afbbcc
