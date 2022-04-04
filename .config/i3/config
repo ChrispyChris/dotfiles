@@ -145,7 +145,7 @@ mode "resize" {
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-        font -xos4-terminus-*-*-normal-*-12-*-*-*-*-*-*-*
+        font -xos4-terminus-medium-r-normal--14-120-72-72-c-60-iso10646-1
         colors {
                      background $bg
                      statusline $fg

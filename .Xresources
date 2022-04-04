@@ -69,7 +69,7 @@ XClock*secondColor: rgba:9e/b2/bd/ff
 URxvt*transparent: true
 URxvt*shading: 30
 URxvt*scrollBar:	false
-URxvt*font: xft:xos4 Terminus:pixelsize=10
-URxvt*boldFont: xft:xos4 Terminus:pixelsize=10
+URxvt.font: xft:Terminus:style=regular:pixelsize=14
+URxvt.boldFont: xft:Terminus:style=bold:pixelsize=14
 !URxvt.perl-ext:
 !URxvt.perl-ext-common:
