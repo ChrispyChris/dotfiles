@@ -10,8 +10,9 @@
 # Set up aliases
 #
 ############################################################
-alias ls='ls --color=auto'
-alias dotfile='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias sudo="sudo "
+alias ls="ls --color=auto"
+alias dotfile="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
 
 ############################################################
 #
@@ -20,7 +21,7 @@ alias dotfile='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 ############################################################
 
 # Set Bash prompt
-PS1='[\u@\h \w]\$ '
+PS1="[\u@\h \w]\$ "
 
 # Set VIM keybinds for Bash
 set -o vi
