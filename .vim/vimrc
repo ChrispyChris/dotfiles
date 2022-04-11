@@ -1,9 +1,22 @@
-" Better safe than sorry
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"                        "
+" Better Safe than Sorry "
+"                        "
+""""""""""""""""""""""""""
+
 set nocompatible
 
-" User settings
-set ruler
-set nu
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"               "
+" User Settings "
+"               "
+"""""""""""""""""
+
+" Leader key setup
+nnoremap <Space> <Nop>
+let mapleader=" "
+
+set number
 set relativenumber
 set history=50
 set showcmd
@@ -12,21 +25,70 @@ set hidden
 set noerrorbells
 set visualbell
 set nowrap
-set colorcolumn=80
+set colorcolumn=81
 set noswapfile
 set nobackup
+set nowritebackup
 set scrolloff=8
-syntax on
 
-" Git settings
-set noro
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"               "
+"  Status Bar   "
+"               "
+"""""""""""""""""
 
-" Tab spacing settings
+set laststatus=2
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"                      "
+" Tab Spacing Settings "
+"                      "
+""""""""""""""""""""""""
+
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
 set expandtab
 set autoindent
 
-" Mappings
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"                                         "
+" Tab Spacing Settings for HTML/CSS Files "
+"                                         "
+"""""""""""""""""""""""""""""""""""""""""""
+
+autocmd Filetype html setlocal tabstop=2 shiftwidth=2 softtabstop=2 expandtab autoindent
+autocmd Filetype css setlocal tabstop=2 shiftwidth=2 softtabstop=2 expandtab autoindent
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"          "
+" Mappings "
+"          "
+""""""""""""
+
 inoremap jj <Esc>
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"                              "
+" Plugin and Filetype Settings "
+"                              "
+""""""""""""""""""""""""""""""""
+"
+" vim-plug automatically executes filetype plugin indent on and syntax enable
+"
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+call plug#begin('~/.vim/plugs')
+Plug 'morhetz/gruvbox'
+call plug#end()
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"               "
+" Color Scheme  "
+"               "
+"""""""""""""""""
+
+let g:gruvbox_italic=1
+autocmd vimenter * ++nested colorscheme gruvbox
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
