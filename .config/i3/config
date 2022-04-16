@@ -102,6 +102,7 @@ bindsym Mod1+7 workspace $ws7
 bindsym Mod1+8 workspace $ws8
 bindsym Mod1+9 workspace $ws9
 bindsym Mod1+0 workspace $ws10
+
 # Switch to previously focused workspace "alt+tab"
 bindsym Mod1+Tab workspace back_and_forth
 
@@ -180,3 +181,12 @@ bindsym Mod1+minus scratchpad show
 bindsym XF86AudioRaiseVolume exec amixer -q set Master 2dB+ unmute
 bindsym XF86AudioLowerVolume exec amixer -q set Master 2dB- unmute
 bindsym XF86AudioMute exec amixer -q set Master toggle && amixer -q set Speaker unmute
+
+#################################################
+#                                               #
+#                Set brightness                 #
+#                                               #
+#################################################
+
+bindsym XF86MonBrightnessUp exec --no-startup-id light -A 10
+bindsym XF86MonBrightnessDown exec --no-startup-id light -U 10
