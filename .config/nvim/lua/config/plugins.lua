@@ -23,7 +23,6 @@ vim.call("plug#begin", "/home/chris/.config/nvim/plugged")
   Plug 'nvim-telescope/telescope.nvim'
 vim.call("plug#end")
 
-
 -- Load Gruvbox theme.
 vim.o.background = "dark"
 vim.cmd([[colorscheme gruvbox]])
