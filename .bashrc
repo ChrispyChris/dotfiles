@@ -14,7 +14,7 @@ alias sudo="sudo "
 alias ls="ls --color=auto"
 alias dotfile="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
 
-# Touchpad on/off
+# Touchpad on/off.
 alias touchon="synclient TouchpadOff=0"
 alias touchoff="synclient TouchpadOff=1"
 
