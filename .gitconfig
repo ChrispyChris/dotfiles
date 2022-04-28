@@ -7,3 +7,5 @@
     prompt = 0
 [merge]
     tool = vimdiff
+[init]
+	defaultBranch = master
