@@ -10,9 +10,14 @@
 # Set up aliases.
 #
 ############################################################
+alias sudo="sudo "
 alias vim="nvim"
 alias ls='ls --color=auto'
 alias dotfile='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+
+# Touchpad on/off.
+alias touchon="xinput --enable 'SynPS/2 Synaptics TouchPad'"
+alias touchoff="xinput --disable 'SynPS/2 Synaptics TouchPad'"
 
 # Luamake is for neovim lua-language-server.
 alias luamake=/home/chris/Git-Downloads/lua-language-server/3rd/luamake/luamake
