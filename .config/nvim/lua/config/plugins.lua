@@ -19,8 +19,9 @@ vim.call("plug#begin", "/home/chris/.config/nvim/plugged")
   Plug("ellisonleao/gruvbox.nvim")
 
   -- Telescope and dependencies.
-  Plug 'nvim-lua/plenary.nvim'
-  Plug 'nvim-telescope/telescope.nvim'
+  Plug "nvim-lua/plenary.nvim"
+  Plug "nvim-telescope/telescope.nvim"
+  Plug ("nvim-telescope/telescope-fzf-native.nvim", {["do"] = "make"})
 vim.call("plug#end")
 
 -- Load Gruvbox theme.

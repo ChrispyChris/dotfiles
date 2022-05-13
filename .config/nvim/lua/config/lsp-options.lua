@@ -17,12 +17,12 @@ local on_attach = function(_, bufnr)
   vim.cmd [[ command! Format execute 'lua vim.lsp.buf.formatting()' ]]
 end
 
--- nvim-cmp supports additional completion capabilities
+-- nvim-cmp supports additional completion capabilities.
 local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities.textDocument.completion.completionItem.snippetSupport = true
 capabilities = require('cmp_nvim_lsp').update_capabilities(capabilities)
 
--- Enable the following language servers
+-- Enable the following language servers.
 local servers = { 'cssls', 'tsserver', 'clangd' }
 for _, lsp in ipairs(servers) do
   lspconfig[lsp].setup {
@@ -41,20 +41,20 @@ lspconfig.sumneko_lua.setup {
   settings = {
     Lua = {
       runtime = {
-        -- Tell the language server which version of Lua you're using (most likely LuaJIT in the case of Neovim)
+        -- Tell the language server which version of Lua you're using (most likely LuaJIT in the case of Neovim).
         version = 'LuaJIT',
-        -- Setup your lua path
+        -- Setup your lua path.
         path = runtime_path,
       },
       diagnostics = {
-        -- Get the language server to recognize the `vim` global
+        -- Get the language server to recognize the `vim` global.
         globals = { 'vim' },
       },
       workspace = {
-        -- Make the server aware of Neovim runtime files
+        -- Make the server aware of Neovim runtime files.
         library = vim.api.nvim_get_runtime_file('', true),
       },
-      -- Do not send telemetry data containing a randomized but unique identifier
+      -- Do not send telemetry data containing a randomized but unique identifier.
       telemetry = {
         enable = false,
       },
@@ -62,10 +62,10 @@ lspconfig.sumneko_lua.setup {
   },
 }
 
--- luasnip setup
+-- luasnip setup.
 local luasnip = require 'luasnip'
 
--- nvim-cmp setup
+-- nvim-cmp setup.
 local cmp = require 'cmp'
 cmp.setup {
   snippet = {
@@ -108,3 +108,16 @@ cmp.setup {
     { name = 'luasnip' },
   },
 }
+
+-- Telescope setup.
+require('telescope').setup {
+  extensions = {
+    fzf = {
+      fuzzy = true,
+      override_generic_sorter = true,
+      override_file_sorter = true,
+      case_mode = "smart_case",
+    }
+  }
+}
+require('telescope').load_extension('fzf')
