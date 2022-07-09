@@ -2,13 +2,17 @@ local Plug = vim.fn["plug#"]
 local opts = { noremap = true, silent = true }
 
 vim.call("plug#begin", "/home/chris/.config/nvim/plugged")
-  -- Neovim LSP and dependencies.
+  -- Neovim LSP.
   Plug("neovim/nvim-lspconfig")
+
+  -- Neovim completion engine and dependencies.
   Plug("hrsh7th/nvim-cmp")
+  Plug("hrsh7th/cmp-buffer")
   Plug("hrsh7th/cmp-nvim-lsp")
+  Plug("hrsh7th/cmp-path")
   Plug("saadparwaiz1/cmp_luasnip")
   Plug("L3MON4D3/LuaSnip")
-
+  
   -- NERDTree.
   Plug("scrooloose/nerdtree", {on = "NERDTreeToggle"})
 
