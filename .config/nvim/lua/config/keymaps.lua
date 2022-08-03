@@ -13,7 +13,7 @@ vim.g.maplocalleader = " "
 vim.g.user_emmet_leader_key = ","
 
 -- Set NERDTree key.
-map("n", "<Leader>n", ":NERDTreeToggle<CR>", opts)
+map("n", "<Leader>n", "<cmd>NERDTreeToggle<CR>", opts)
 
 -- Telescope autocommands.
 map("n", "<Leader>ff", "<cmd>lua require('telescope.builtin').find_files()<CR>", opts)
