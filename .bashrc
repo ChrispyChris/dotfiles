@@ -11,8 +11,12 @@
 #
 ############################################################
 alias sudo="sudo "
+alias vim="nvim"
 alias ls="ls --color=auto"
 alias dotfile="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
+
+# Luamake is for neovim lua-language-server.
+alias luamake=/home/chris/Git-Downloads/lua-language-server/3rd/luamake/luamake
 
 # Touchpad on/off.
 alias touchon="synclient TouchpadOff=0"
@@ -38,7 +42,3 @@ export EDITOR="$VISUAL"
 
 # Set extended pattern matching.
 shopt -q -s extglob
-
-# Set pywal colors for terminals.
-(cat ~/.cache/wal/sequences &)
-source ~/.cache/wal/colors-tty.sh
