@@ -141,6 +141,7 @@ gaps inner 10
 gaps outer 10
 
 # Windows border
+for_window [class="^.*"] border pixel 2
 default_border pixel 2
 
 #################################################
