@@ -39,6 +39,7 @@ xinput set-prop "SynPS/2 Synaptics TouchPad" "libinput Tapping Enabled" 1
 
 # Setting up mpd
 mpd &
+mpdscribble
 
 # Swap Caps Lock and Left Control
 setxkbmap -option ctrl:swapcaps
