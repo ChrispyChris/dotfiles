@@ -14,6 +14,12 @@ local on_attach = function(_, bufnr)
   vim.api.nvim_buf_set_keymap(bufnr, 'n', 'gr', '<cmd>lua vim.lsp.buf.references()<CR>', opts)
   vim.api.nvim_buf_set_keymap(bufnr, 'n', '<leader>ca', '<cmd>lua vim.lsp.buf.code_action()<CR>', opts)
   vim.api.nvim_buf_set_keymap(bufnr, 'n', '<leader>so', [[<cmd>lua require('telescope.builtin').lsp_document_symbols()<CR>]], opts)
+
+  -- Disable, enable, and open float for diagnostic messages.
+  vim.api.nvim_buf_set_keymap(bufnr, 'n', '<leader>de', [[<cmd>lua vim.diagnostic.disable(0)<CR>]], opts)
+  vim.api.nvim_buf_set_keymap(bufnr, 'n', '<leader>ee', [[<cmd>lua vim.diagnostic.enable(0)<CR>]], opts)
+  vim.api.nvim_buf_set_keymap(bufnr, 'n', '<leader>se', [[<cmd>lua vim.diagnostic.open_float()<CR>]], opts)
+
   vim.cmd [[ command! Format execute 'lua vim.lsp.buf.formatting()' ]]
 end
 
