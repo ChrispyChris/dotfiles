@@ -1,6 +1,5 @@
 local opts = { noremap = true, silent = true }
 local map = vim.api.nvim_set_keymap
-local test = vim.api.nvim_set_keymap
 
 -- Set Neovim Escape.
 map("i", "jj", "<Esc>", opts)
