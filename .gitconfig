@@ -1,6 +1,7 @@
 [user]
 	name = Chris Wood
 	email = chrispychris3@gmail.com
+	signingkey = BB4B19035C94020D!
 [diff]
     tool = vimdiff
 [difftool]
