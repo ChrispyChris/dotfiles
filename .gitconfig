@@ -1,7 +1,9 @@
 [user]
 	name = Chris Wood
 	email = chrispychris3@gmail.com
-	signingkey = BB4B19035C94020D!
+	signingKey = BB4B19035C94020D!
+[commit]
+    gpgsign = true
 [diff]
     tool = vimdiff
 [difftool]
