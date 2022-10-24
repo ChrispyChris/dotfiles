@@ -1,15 +1,15 @@
 ! Colors.
-*foreground:        #afbbcc
+*foreground:        #AFBBCC
 *background:        #080F37
-*.foreground:       #afbbcc
+*.foreground:       #AFBBCC
 *.background:       #080F37
 *bordercolor:       [100]#080F37
-URxvt*foreground:   #afbbcc
-URxvt*background:   [100]#080F37
-URxvt*cursorColor:  #afbbcc
-URxvt*borderColor:  [100]#080F37
+URxvt*foreground:   #AFBBCC
+uRxvt*background:   [100]#080F37
+URxvt*cursorColor:  #AFBBCC
+uRxvt*borderColor:  [100]#080F37
 
-!! URxvt
+! URxvt
 URxvt.font: xft:Terminus:style=regular:pixelsize=14
 URxvt.boldFont: xft:Terminus:style=bold:pixelsize=14
 URxvt.letterSpace: 0
