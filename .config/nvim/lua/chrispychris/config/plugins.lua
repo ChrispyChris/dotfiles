@@ -5,6 +5,9 @@ vim.call("plug#begin", "/home/chris/.config/nvim/plugged")
   -- Neovim LSP.
   Plug("neovim/nvim-lspconfig")
 
+  -- Neovim Treesitter.
+  Plug("nvim-treesitter/nvim-treesitter", {["do"] = ":TSUpdate"})
+
   -- Neovim completion engine and dependencies.
   Plug("hrsh7th/nvim-cmp")
   Plug("hrsh7th/cmp-buffer")
