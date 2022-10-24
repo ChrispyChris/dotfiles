@@ -20,4 +20,3 @@ map("n", "<Leader>ff", "<cmd>lua require('telescope.builtin').find_files()<CR>",
 map("n", "<Leader>fg", "<cmd>lua require('telescope.builtin').live_grep()<CR>", opts)
 map("n", "<Leader>fb", "<cmd>lua require('telescope.builtin').buffers()<CR>", opts)
 map("n", "<Leader>fh", "<cmd>lua require('telescope.builtin').help_tags()<CR>", opts)
-map("n", "<Leader>e" , "<cmd>lua vim.diagnostic.open_float()<CR>", opts)
