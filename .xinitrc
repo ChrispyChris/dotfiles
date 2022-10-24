@@ -48,5 +48,5 @@ setxkbmap -option ctrl:swapcaps
 setxkbmap -option compose:menu
 
 # Setting up i3-gaps environment
-wal -i "/home/chris/Wallpapers/Sky.png" 
+~/.fehbg &
 exec i3
