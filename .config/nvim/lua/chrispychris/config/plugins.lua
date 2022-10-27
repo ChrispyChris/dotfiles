@@ -15,7 +15,7 @@ vim.call("plug#begin", "/home/chris/.config/nvim/plugged")
   Plug("hrsh7th/cmp-path")
   Plug("saadparwaiz1/cmp_luasnip")
   Plug("L3MON4D3/LuaSnip")
-  
+
   -- NERDTree.
   Plug("scrooloose/nerdtree", {on = "NERDTreeToggle"})
 
@@ -24,16 +24,14 @@ vim.call("plug#begin", "/home/chris/.config/nvim/plugged")
 
   -- Neovim theme.
   Plug("ellisonleao/gruvbox.nvim")
+  Plug("nvim-lualine/lualine.nvim")
+  Plug("kyazdani42/nvim-web-devicons")
 
   -- Telescope and dependencies.
   Plug "nvim-lua/plenary.nvim"
   Plug "nvim-telescope/telescope.nvim"
   Plug ("nvim-telescope/telescope-fzf-native.nvim", {["do"] = "make"})
 vim.call("plug#end")
-
--- Load Gruvbox theme.
-vim.o.background = "dark"
-vim.cmd([[colorscheme gruvbox]])
 
 -- Emmet only for html/css.
 vim.g.user_emmet_install_global = 0

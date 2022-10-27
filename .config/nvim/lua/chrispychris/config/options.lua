@@ -40,3 +40,10 @@ opt.writebackup = false
 
 opt.foldmethod = "expr"
 opt.foldexpr = "nvim_treesitter#foldexpr()"
+
+-- Load Gruvbox theme.
+vim.o.background = "dark"
+vim.cmd([[colorscheme gruvbox]])
+
+-- Configure and load Lualine.
+require("lualine").setup()
