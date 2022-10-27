@@ -22,15 +22,16 @@ vim.call("plug#begin", "/home/chris/.config/nvim/plugged")
   -- Emmet.
   Plug("mattn/emmet-vim", {["for"] = {"css", "html"}})
 
-  -- Neovim theme.
-  Plug("ellisonleao/gruvbox.nvim")
-  Plug("nvim-lualine/lualine.nvim")
-  Plug("kyazdani42/nvim-web-devicons")
-
   -- Telescope and dependencies.
   Plug "nvim-lua/plenary.nvim"
   Plug "nvim-telescope/telescope.nvim"
   Plug ("nvim-telescope/telescope-fzf-native.nvim", {["do"] = "make"})
+
+  -- Neovim theme.
+  Plug("ellisonleao/gruvbox.nvim")
+  Plug("nvim-lualine/lualine.nvim")
+  Plug("ryanoasis/vim-devicons")
+
 vim.call("plug#end")
 
 -- Emmet only for html/css.

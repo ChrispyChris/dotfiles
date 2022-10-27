@@ -1,4 +1,3 @@
-local set = vim.set
 local opt = vim.opt
 
 vim.cmd("syntax enable")
@@ -11,6 +10,7 @@ opt.conceallevel = 0
 opt.cursorline = true
 opt.expandtab = true
 opt.fileencoding = "utf-8"
+opt.guifont = "TerminessTTF Nerd Font Mono 11"
 opt.hlsearch = true
 opt.ignorecase = true
 opt.mouse = "a"
