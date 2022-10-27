@@ -1,6 +1,4 @@
 ! Colors.
-*foreground:        #AFBBCC
-*background:        #080F37
 *.foreground:       #AFBBCC
 *.background:       #080F37
 *bordercolor:       [100]#080F37
@@ -10,8 +8,8 @@ URxvt*cursorColor:  #AFBBCC
 uRxvt*borderColor:  [100]#080F37
 
 ! URxvt
-URxvt.font: xft:Terminus:style=regular:pixelsize=14
-URxvt.boldFont: xft:Terminus:style=bold:pixelsize=14
+URxvt.font: xft:TerminessTTF Nerd Font Mono:style=Medium:size=14
+URxvt.boldFont: xft:TerminessTTF Nerd Font Mono:style=Bold:size=14
 URxvt.letterSpace: 0
 URxvt.lineSpace: 0
 URxvt.geometry: 92x24
