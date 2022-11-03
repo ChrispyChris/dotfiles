@@ -41,4 +41,4 @@ mpd &
 
 # Start i3-gaps
 ~/.fehbg &
-exec dwm
+exec i3
