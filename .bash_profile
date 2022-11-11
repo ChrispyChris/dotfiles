@@ -19,7 +19,5 @@
 PATH="$PATH:/home/chris/bin"
 PATH="$PATH:/home/chris/Git_Downloads/lua-language-server/bin"
 PATH="$PATH:/home/chris/.local/bin"
+PATH="/home/chris/.local/share/pnpm:$PATH"
 export PATH
-
-# Sets npm global install to local user rather than root.
-export npm_config_prefix="/home/chris/.local"

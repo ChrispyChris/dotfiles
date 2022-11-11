@@ -25,7 +25,6 @@ set $left j
 set $right semicolon
 
 # Launching programs.
-bindsym Mod1+w exec --no-startup-id google-chrome-stable
 
 # Use Mouse+Mod1 to drag floating windows to their wanted position.
 floating_modifier Mod1
