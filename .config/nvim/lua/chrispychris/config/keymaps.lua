@@ -4,6 +4,10 @@ local map = vim.api.nvim_set_keymap
 -- Set Neovim Escape.
 map("i", "jj", "<Esc>", opts)
 
+-- Set Control+D/U to center the cursor vertically in the buffer on move.
+map("n", "<C-d>", "<C-d>zz", opts)
+map("n", "<C-u>", "<C-u>zz", opts)
+
 -- Set leader key to space bar.
 map("", "<Space>", "<Nop>", opts)
 vim.g.mapleader = " "
