@@ -10,7 +10,6 @@
 # Set up aliases.
 #
 ############################################################
-alias sudo="sudo "
 alias vim="nvim"
 alias ls='ls --color=auto'
 alias dotfile='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
