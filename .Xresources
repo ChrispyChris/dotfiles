@@ -44,13 +44,16 @@ URxvt*borderColor:  [100]#080F37
 *color66:  #080F37
 
 ! uRxvt
-URxvt.font: xft:TerminessTTF Nerd Font Mono:style=Medium:size=12
-URxvt.boldFont: xft:TerminessTTF Nerd Font Mono:style=Bold:size=12
+! URxvt.font: xft:TerminessTTF Nerd Font Mono:style=Medium:size=12
+! URxvt.boldFont: xft:TerminessTTF Nerd Font Mono:style=Bold:size=12
+ URxvt.font: xft:Terminess Nerd Font Mono:style=Regular:size=12
+
 URxvt.letterSpace: 0
 URxvt.lineSpace: 0
 URxvt.internalBorder: 24
 URxvt.cursorBlink: true
 URxvt.cursorUnderline: false
+URxvt.geometry: 80x-1
 URxvt.saveline: 2048
 URxvt.scrollBar: false
 URxvt.scrollBar_right: false
