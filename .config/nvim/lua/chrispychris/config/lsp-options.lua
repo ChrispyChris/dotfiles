@@ -31,7 +31,7 @@ capabilities.textDocument.completion.completionItem.snippetSupport = true
 capabilities = require('cmp_nvim_lsp').default_capabilities(capabilities)
 
 -- Enable the following language servers.
-local servers = { 'cssls', 'tsserver', 'clangd' }
+local servers = { 'tsserver', 'tailwindcss', 'clangd' }
 for _, lsp in ipairs(servers) do
   lspconfig[lsp].setup {
     on_attach = on_attach,

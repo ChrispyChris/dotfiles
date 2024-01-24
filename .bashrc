@@ -36,6 +36,9 @@ HISTFILESIZE=2000
 export VISUAL=nvim
 export EDITOR="$VISUAL"
 
+# Set pnpm home directory.
+export PNPM_HOME="/home/chris/.local/share/pnpm"
+
 # Set xcolor variable for saving picked color instead of forking process.
 export XCOLOR_FOREGROUND=""
 
