@@ -16,13 +16,18 @@ general {
         interval = 5
 }
 
-order += "wireless _first_"
-order += "ethernet _first_"
+order += "wireless wlp0s26u1u6"
+order += "ethernet eno1"
 order += "battery all"
 order += "disk /"
 order += "tztime local"
 
-ethernet _first_ {
+wireless wlp0s26u1u6 {
+    format_up = "WiFi: %quality at %essid, %bitrate, %ip"
+    format_down = "WiFi: Down"
+}
+
+ethernet eno1 {
         format_up = "Eno1: %ip"
         format_down = "Eno1: Disconnected"
 }
