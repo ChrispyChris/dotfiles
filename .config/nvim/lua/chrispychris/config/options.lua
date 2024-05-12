@@ -1,0 +1,46 @@
+local opt = vim.opt
+
+vim.cmd("syntax enable")
+vim.g.have_nerd_font = true
+opt.backup = false
+opt.clipboard = "unnamedplus"
+opt.cmdheight = 2
+opt.colorcolumn = "81"
+opt.completeopt = {"menu", "menuone", "noselect"}
+opt.conceallevel = 0
+opt.cursorline = true
+opt.expandtab = true
+opt.fileencoding = "utf-8"
+opt.guifont = "TerminessTTF Nerd Font Mono 11"
+opt.hlsearch = true
+opt.inccommand = "split"
+opt.ignorecase = true
+opt.list = true
+opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
+opt.mouse = "a"
+opt.number = true
+opt.numberwidth = 4
+opt.pumheight = 10
+opt.relativenumber = true
+opt.scrolloff = 10
+opt.shiftwidth = 0
+opt.shortmess:append "c"
+opt.showmode = false
+opt.showtabline = 1
+opt.sidescrolloff = 8
+opt.signcolumn = "yes"
+opt.smartcase = true
+opt.smartindent = true
+opt.splitbelow = true
+opt.splitright = true
+opt.swapfile = false
+opt.tabstop = 2
+opt.termguicolors = true
+opt.timeoutlen = 1000
+opt.undofile = true
+opt.updatetime = 300
+opt.wrap = false
+opt.writebackup = false
+
+opt.foldmethod = "expr"
+opt.foldexpr = "nvim_treesitter#foldexpr()"
