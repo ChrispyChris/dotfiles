@@ -1,8 +1,10 @@
 {
-  "gitsigns.nvim": { "branch": "main", "commit": "805610a9393fa231f2c2b49cb521bfa413fadb3d" },
+  "gitsigns.nvim": { "branch": "main", "commit": "cdfcd9d39d23c46ae9a040de2c6a8b8bf868746e" },
   "gruvbox.nvim": { "branch": "main", "commit": "96a8ec336fb48a11cefbd57508888361431aac26" },
-  "lazy.nvim": { "branch": "main", "commit": "9895337d1f4c0cea1186d92148e3d80f6551eda8" },
+  "lazy.nvim": { "branch": "main", "commit": "8f19915175395680808de529e4220da8dafc0759" },
   "nerdtree": { "branch": "master", "commit": "fbb71fcd90602e3ec77f40b864b5f9b437c496c5" },
+  "nvim-web-devicons": { "branch": "master", "commit": "e37bb1feee9e7320c76050a55443fa843b4b6f83" },
   "plenary.nvim": { "branch": "master", "commit": "a3e3bc82a3f95c5ed0d7201546d5d2c19b20d683" },
-  "telescope.nvim": { "branch": "0.1.x", "commit": "d829aa64059001ee7b2c8c8aa9c4e6df0b17d893" }
+  "telescope-fzf-native.nvim": { "branch": "main", "commit": "9ef21b2e6bb6ebeaf349a0781745549bbb870d27" },
+  "telescope.nvim": { "branch": "0.1.x", "commit": "a0bbec21143c7bc5f8bb02e0005fa0b982edc026" }
 }
