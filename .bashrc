@@ -32,8 +32,9 @@ PS1='\[\033[0m\033[38;5;17;48;5;213m\][\u@\h \w]\$\[\033[0m\] '
 
 # Ignore duplicate lines and lines starting with space in the history.
 HISTCONTROL=ignoreboth
-HISTSIZE=1000
-HISTFILESIZE=2000
+HISTFILESIZE=10000
+HISTSIZE=10000
+HISTTIMEFORMAT="%F %T "
 
 # Set the text editor.
 export VISUAL=nvim
