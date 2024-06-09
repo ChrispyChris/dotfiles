@@ -63,3 +63,7 @@ URxvt.shading: 30
 URxvt.iso14755: false
 URxvt.keysym.Shift-Up: command:\033]720;1\007
 URxvt.keysym.Shift-Down: command:\033]721;1\007
+
+!URxvt Perl Extensions
+URxvt.perl-lib: /home/chris/.config/urxvt_perl_extensions
+URxvt.perl-ext-common: tmux_clipboard
