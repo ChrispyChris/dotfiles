@@ -3,6 +3,7 @@ local opt = vim.opt
 vim.cmd("syntax enable")
 vim.g.have_nerd_font = true
 opt.backup = false
+opt.breakindent = true
 opt.clipboard = "unnamedplus"
 opt.cmdheight = 2
 opt.colorcolumn = "81"
@@ -41,6 +42,3 @@ opt.undofile = true
 opt.updatetime = 300
 opt.wrap = false
 opt.writebackup = false
-
-opt.foldmethod = "expr"
-opt.foldexpr = "nvim_treesitter#foldexpr()"
