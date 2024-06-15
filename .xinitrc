@@ -38,8 +38,8 @@ xset -dpms
 xinput set-prop "SynPS/2 Synaptics TouchPad" "libinput Tapping Enabled" 1
 
 # Setting up mpd
-mpd 2>&1 | tee /dev/stderr &
-mpdscribble 2>&1 | tee /dev/stderr &
+mpd &
+mpdscribble &
 
 # Configure Compose Key
 setxkbmap -option compose:menu
