@@ -15,8 +15,8 @@ alias ls='ls --color=auto'
 alias dotfile='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
 # Touchpad on/off.
-alias touchon="xinput enable 'DELL0A7B:00 04F3:3146 Touchpad'"
-alias touchoff="xinput disable 'DELL0A7B:00 04F3:3146 Touchpad'"
+alias touchon="xinput enable 'DELL0A7B:00 04F3:3146 Touchpad' && pkill unclutter"
+alias touchoff="xinput disable 'DELL0A7B:00 04F3:3146 Touchpad' && unclutter --start-hidden --timeout 1 --fork"
 
 # Luamake is for neovim lua-language-server.
 alias luamake=/home/chris/Git-Downloads/lua-language-server/3rd/luamake/luamake
