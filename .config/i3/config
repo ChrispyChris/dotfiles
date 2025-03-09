@@ -169,5 +169,5 @@ bindsym XF86AudioMute exec amixer -q set Master toggle && amixer -q set Speaker 
 #                                               #
 #################################################
 
-bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set +10%
-bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 10%-
+bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set +5%
+bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 5%-
