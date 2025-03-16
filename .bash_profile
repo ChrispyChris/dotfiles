@@ -17,7 +17,6 @@
 #############################################################
 
 PATH="$PATH:/home/chris/bin"
-PATH="$PATH:/home/chris/Git-Downloads/lua-language-server/bin"
 PATH="$PATH:/home/chris/.local/bin"
 export PATH
 
