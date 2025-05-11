@@ -11,7 +11,7 @@ return {
         return vim.fn.executable "make" == 1
       end,
     },
-    { 
+    {
       "nvim-tree/nvim-web-devicons",
       enabled = vim.g.have_nerd_font,
     },
@@ -35,7 +35,6 @@ return {
     map("n", "<leader>cb", "<cmd>lua require('telescope.builtin').current_buffer_fuzzy_find()<CR>", { desc = "Search current buffer fuzzily" })
     map("n", "<leader>sc", "<cmd>lua require('telescope.builtin').find_files({ cwd = vim.fn.stdpath('config') })<CR>", { desc = "Search Neovim configuration files" })
 
-    -- Telescope autocommands for the LSP.
     vim.api.nvim_create_autocmd("LspAttach", {
       group = vim.api.nvim_create_augroup("lsp-attach", { clear = true }),
       callback = function(event)

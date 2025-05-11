@@ -1,6 +1,5 @@
 local opt = vim.opt
 
-vim.cmd("syntax enable")
 vim.g.have_nerd_font = true
 opt.backup = false
 opt.breakindent = true
@@ -16,8 +15,7 @@ opt.guifont = "TerminessTTF Nerd Font Mono 11"
 opt.hlsearch = true
 opt.inccommand = "split"
 opt.ignorecase = true
-opt.list = true
-opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
+opt.list = false
 opt.mouse = "a"
 opt.number = true
 opt.numberwidth = 4
