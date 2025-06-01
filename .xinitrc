@@ -44,6 +44,9 @@ mpdscribble &
 # Configure Compose Key
 setxkbmap -option compose:menu
 
+# Start the Music Player Daemon (MPD)
+mpd &
+
 # Setting up i3-gaps environment
 ~/.fehbg &
 exec i3
