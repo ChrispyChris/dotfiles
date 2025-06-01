@@ -1,7 +1,7 @@
 ### Connection settings ###
 mpd_host = localhost
 mpd_port = 6600
-mpd_music_dir = /mnt/music
+mpd_music_dir = /home/chris/Music
 
 ### Display settings ###
 playlist_display_mode = columns
